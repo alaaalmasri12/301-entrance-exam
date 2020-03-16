@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 1</title>
+    <title>To-DO-app</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>TO DO  List</h1>
+        </div>
+    </header>
+    <main>
+        <div class="form-box">
+        <h1 id="date-feild"></h1> 
+        <form id="tasks">
+            <label for="task-feild">What do you want to do get done Today?</label>
+            <input type="text" id="task-feild">
+            <br>
+
+            <label for="date">Date:</label>
+            <br>
+            <input type="date" id="date">
+            <br>
+            <input type="submit" id="submit">
+        </form>
+        </div>
+        <ul id="task-result">
+            
+        </div>
+    </main>
     
-    <script src="q1.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

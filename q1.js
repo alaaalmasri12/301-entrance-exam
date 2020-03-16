@@ -5,14 +5,18 @@ inputs:array of numbers and a number
 */
 
 'user strict'
-
+var arraynumbers=[4,2,3,1];
+var larger=3;
+var numberofnumbers=0;
 function greaterThan(arr, elem) {
 
     for(var i=0;i<arr.length;i++)
-    if(arr[i]<elem)
+    if(arr[i]>larger)
     {
-        return arr[i];
+        numberofnumbers++;
     }
+    return numberofnumbers;
     
   }
-  console.log(greaterThan([4,2,3,1],8));
+var result=greaterThan(arraynumbers,larger);
+console.log("result",result);
